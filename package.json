@@ -1,0 +1,16 @@
+{
+  "name": "rtk_webdriverio",
+  "version": "1.0.0",
+  "main": "",
+  "author": "mwakizaka",
+  "private": true,
+  "engines": {
+    "node": "16.13.2",
+    "npm": "8.1.2"
+  },
+  "dependencies": {
+    "asyncbox": "2.9.4",
+    "webdriverio": "7.19.5"
+  },
+  "scripts": {}
+}
