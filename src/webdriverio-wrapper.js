@@ -1,24 +1,24 @@
 const url = require('url');
 const webdriverio = require("webdriverio");
 
-const createWdIOByInit = async function (driverUrl, w3cCaps) {
-  const remoteOptions = generateRemoteOptions(driverUrl, w3cCaps);
+const createWdIOByInit = async function (driverUrl, isW3c, caps) {
+  const remoteOptions = generateRemoteOptions(driverUrl, isW3c, caps);
   return webdriverio.remote(remoteOptions);
 }
 
-const generateRemoteOptions = function (driverUrl, w3cCaps) {
-  const options = generateBaseOptions(driverUrl);
-  return Object.assign(options, {capabilities: w3cCaps});
+const generateRemoteOptions = function (driverUrl, isW3c, caps) {
+  const options = generateBaseOptions(driverUrl, isW3c);
+  return Object.assign(options, {capabilities: caps});
 }
 
-const generateBaseOptions = function (driverUrl) {
+const generateBaseOptions = function (driverUrl, isW3c) {
   const parsedUrl = url.parse(driverUrl);
   return {
     // logLevel: 'silent',
     protocol: parsedUrl.protocol.substring(0, parsedUrl.protocol.length - 1),
     hostname: parsedUrl.hostname,
     path: parsedUrl.pathname,
-    isW3C: true,
+    isW3C: isW3c,
     port: 443,
     connectionRetryCount: 0
   };
