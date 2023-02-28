@@ -18,7 +18,7 @@ const sleep = async function (milliSeconds) {
 
 async function runRtkTest () {
     const capabilities = {
-    "appium:noReset": false, // when commenting this out for `iPhone 14 (A)` it fails to initialize an appium session with an error like
+    "appium:noReset": false, // it fails to initialize an appium session with an error like
     /**
     2023-02-23T04:21:30.967Z ERROR webdriver: unknown error: An unknown server-side error occurred while processing the command. Original error: Could not install '/var/folders/0r/td3rpr9j7110dy1rwm5lg7rm0000gn/T/2023123-50097-1qs2889.8zry/iOSWebView.app':
       - Unexpected data: {"Error":"ApplicationVerificationFailed","ErrorDetail":-402620395,"ErrorDescription":"Failed to verify code signature of /var/installd/Library/Caches/com.apple.mobile.installd.staging/temp.Kb8mIv/extracted/com.trident-qa.iOSWebView.app : 0xe8008015 (A valid provisioning profile for this executable was not found.)"}
@@ -35,7 +35,7 @@ async function runRtkTest () {
       - Unexpected data: {"Error":"ApplicationVerificationFailed","ErrorDetail":-402620395,"ErrorDescription":"Failed to verify code signature of /var/installd/Library/Caches/com.apple.mobile.installd.staging/temp.Kb8mIv/extracted/com.trident-qa.iOSWebView.app : 0xe8008015 (A valid provisioning profile for this executable was not found.)"}
       - 'ios-deploy' utility has not been found in PATH. Is it installed?
      */
-    // note that the above error can happen with `iPhone 13 mini (D)`, `iPhone 8 (F)` and `iPhone SE3 (A)` as well
+    // note that the above error has happened on `iPhone 14 (A)`, `iPhone 13 mini (D)`, `iPhone 8 (F)` and `iPhone SE3 (A)` as well
     "appium:accessToken": accessToken,
     "platformName": "iOS",
     "appium:automationName": "XCUITest",
