@@ -1,6 +1,6 @@
 # Requirements
-- node: 16
-- npm: 8
+- node: 18.15.0
+- npm: 9.5.0
 
 # Set up
 ```

@@ -5,8 +5,8 @@
   "author": "mwakizaka",
   "private": true,
   "engines": {
-    "node": "16.13.2",
-    "npm": "8.1.2"
+    "node": "18.15.0",
+    "npm": "9.5.0"
   },
   "dependencies": {
     "asyncbox": "2.9.4",
