@@ -39,7 +39,7 @@ async function runRtkTest () {
     "appium:accessToken": accessToken,
     "platformName": "iOS",
     "appium:automationName": "XCUITest",
-    "appium:platformVersion": "15",
+    "appium:platformVersion": "14",
     "appium:deviceName": "iPhone",
     "appium:app": appUrl,
     "appium:bundleId": bundleId,
