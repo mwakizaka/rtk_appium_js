@@ -43,7 +43,8 @@ async function runRtkTest () {
     "appium:deviceName": "iPhone",
     "appium:app": appUrl,
     "appium:bundleId": bundleId,
-    "appium:logLevel": "debug"
+    "appium:logLevel": "debug",
+    "appium:appiumVersion": "2.0.0"
   }
   let driver;
   try {
