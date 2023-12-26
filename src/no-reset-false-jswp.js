@@ -23,7 +23,7 @@ async function runRtkTest () {
     "platformName": "iOS",
     "automationName": "XCUITest",
     "platformVersion": "16",
-    "deviceName": "iPhone 14 Plus (A)",
+    "deviceName": "iPhone",
     "app": appUrl,
     "bundleId": bundleId,
     "logLevel": "debug"
