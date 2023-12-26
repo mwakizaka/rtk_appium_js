@@ -22,7 +22,7 @@ async function runRtkTest () {
     "accessToken": accessToken,
     "platformName": "iOS",
     "automationName": "XCUITest",
-    "platformVersion": "16",
+    "platformVersion": "15",
     "deviceName": "iPhone",
     "app": appUrl,
     "bundleId": bundleId,
