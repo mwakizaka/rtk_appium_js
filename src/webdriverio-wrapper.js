@@ -20,6 +20,7 @@ const generateBaseOptions = function (driverUrl, isW3c) {
     path: parsedUrl.pathname,
     isW3C: isW3c,
     port: 443,
+    connectionRetryTimeout: 1200000, // to avoid Timeout awaiting 'request' like https://app.hubspot.com/live-messages/21173256/inbox/4396764332#comment, TODO: specify based on platforms/environments
     connectionRetryCount: 0
   };
 }
