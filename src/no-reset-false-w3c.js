@@ -39,11 +39,12 @@ async function runRtkTest () {
     "appium:accessToken": accessToken,
     "platformName": "iOS",
     "appium:automationName": "XCUITest",
-    "appium:platformVersion": "15",
-    "appium:deviceName": "iPhone",
+    "appium:platformVersion": "16",
+    "appium:deviceName": "iPhone 14 Plus (A)",
     "appium:app": appUrl,
     "appium:bundleId": bundleId,
-    "appium:logLevel": "debug"
+    "appium:logLevel": "debug",
+    "appium:appiumVersion": "2.0.0"
   }
   let driver;
   try {
